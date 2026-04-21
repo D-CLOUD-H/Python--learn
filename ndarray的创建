@@ -1,0 +1,23 @@
+直接创建
+arr=np.arr([1,2,3])
+顺带指定数据类型
+arr=np.array([1,2,3],dtype=np.float64)
+复制                    arr1=np.copy(arr)
+指定为0                 arr=np.zeros([2,])
+指定为1                 arr=np.ones([2,3])
+指定为空                arr=np.empty([2,3])
+指定为某个数（这里是7）  arr=np.full([2,3],7)
+顺带指定形状            arr1=np.full_like(arr,5)
+
+按照范围创建
+arr=np.arange(1,5,1)
+arr=np.linspace(1,5,3)
+arr=np.logspace(1,3,3,base=2)
+
+单位矩阵      arr=np.eye(2,3)
+对角矩阵      arr=np.diag([1,2,3,4,5])
+随机矩阵      arr=np.random.rand(3,4)
+指定随机范围  arr=np.random.uniform(3,4,(1,2))
+随机整数      arr=np.random.randint(0,20,(5,5))
+正态分布      arr=np.random.randn(3,3)
+种子          np.random.seed(20)
