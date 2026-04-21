@@ -1,0 +1,22 @@
+ndarray具有同质性，只允许存入同一种数据类型的数据
+arr=np.array([[1,2,3],[4,5,6],[7,8,9]])
+以此为代价，换来的强大的运算效率
+ndarray的一些属性
+.shape 数组的形状（行数和列数）
+.ndim 数组的维度
+.size 数组中元素的个数
+.dtype 数组中元素的类型 
+.T 数组的转置
+print('arr的形状是',arr.shape)
+print('arr的维度是',arr.ndim)
+print('arr的元素数量是',arr.size)
+print('arr的元素类型是',arr.dtype)
+print('arr的转置是',arr.T)
+###
+arr的形状是 (3, 3)
+arr的维度是 2
+arr的元素数量是 9
+arr的元素类型是 int64
+arr的转置是 [[1 4 7]
+ [2 5 8]
+ [3 6 9]]
